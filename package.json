@@ -1,7 +1,7 @@
 {
   "name": "nextra",
   "version": "1.0.0",
-  "description": "",
+  "description": "chilling",
   "main": "index.js",
   "scripts": {
     "dev": "next",

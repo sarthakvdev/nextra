@@ -1,7 +1,7 @@
 export default {
-  github: 'https://github.com/shuding/nextra',
-  docsRepositoryBase: 'https://github.com/shuding/nextra/blob/master',
-  titleSuffix: ' – Nextra',
+  github: 'https://github.com/sarthakvdev',
+  docsRepositoryBase: 'https://github.com/sarthakvdev/nextra',
+  titleSuffix: ' – Sarthak Verma',
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">SARTHAK.</span>
@@ -57,7 +57,13 @@ export default {
   search: true,
   prevLinks: true,
   nextLinks: true,
+  darkMode: true,
   footer: true,
-  footerText: <>Inquisitive {new Date().getFullYear()} © Sarthak.</>,
+  footerText: <>
+                <a href="https://twitter.com/srthkv">Twitter</a> •{' '}
+                <a href="https://linkedin.com/in/sarthakv">LinkedIn</a> •{' '}
+                <a href="https://github.com/sarthakvdev">Github</a>
+              </>,
+  footerEditLink: false,
   unstable_faviconGlyph: '👋',
 }
