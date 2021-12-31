@@ -1,6 +1,7 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default {
   github: 'https://github.com/sarthakvdev',
-  docsRepositoryBase: 'https://github.com/sarthakvdev/nextra',
+  docsRepositoryBase: 'https://github.com/sarthakvdev/internet-garden',
   titleSuffix: ' – Sarthak Verma',
   logo: (
     <>
@@ -13,15 +14,15 @@ export default {
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
-      <meta name="description" content="Internet Garden" />
-      <meta name="og:description" content="Nextra: the Next.js site builder" />
+      <meta name="description" content="Sarthak's Internet Garden" />
+      <meta name="og:description" content="Sarthak's Internet Garden" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content="https://nextra.vercel.app/og.png" />
-      <meta name="twitter:site:domain" content="nextra.vercel.app" />
-      <meta name="twitter:url" content="https://nextra.vercel.app" />
+      <meta name="twitter:image" content="/banner.png" />
+      <meta name="twitter:site:domain" content="https://sarthakv.vercel.app" />
+      <meta name="twitter:url" content="https://sarthakv.vercel.app" />
       <meta name="og:title" content="Sarthak Verma" />
-      <meta name="og:image" content="https://nextra.vercel.app/og.png" />
-      <meta name="apple-mobile-web-app-title" content="Nextra" />
+      <meta name="og:image" content="/banner.png" />
+      <meta name="apple-mobile-web-app-title" content="Sarthak." />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -60,10 +61,12 @@ export default {
   darkMode: true,
   footer: true,
   footerText: <>
-                <a href="https://twitter.com/srthkv">Twitter</a> •{' '}
-                <a href="https://linkedin.com/in/sarthakv">LinkedIn</a> •{' '}
-                <a href="https://github.com/sarthakvdev">Github</a>
+                <a href="https://twitter.com/srthkv" target="_blank" rel="noreferrer noopener">Twitter</a> •{' '}
+                <a href="https://linkedin.com/in/sarthakv" target="_blank" rel="noreferrer noopener">LinkedIn</a> •{' '}
+                <a href="https://github.com/sarthakvdev" target="_blank" rel="noreferrer noopener">Github</a> •{' '}
+                <a href="https://sarthakv.hashnode.dev" target="_blank" rel="noreferrer noopener">Blog</a>
+                <span style={{ display: "flex" }}>built by sarthak verma</span>
               </>,
-  footerEditLink: false,
-  unstable_faviconGlyph: '👋',
+  footerEditLink: true,
+  unstable_faviconGlyph: '🌈',
 }
