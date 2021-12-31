@@ -65,7 +65,6 @@ export default {
                 <a href="https://linkedin.com/in/sarthakv" target="_blank" rel="noreferrer noopener">LinkedIn</a> •{' '}
                 <a href="https://github.com/sarthakvdev" target="_blank" rel="noreferrer noopener">Github</a> •{' '}
                 <a href="https://sarthakv.hashnode.dev" target="_blank" rel="noreferrer noopener">Blog</a>
-                <span style={{ display: "flex" }}>built by sarthak verma</span>
               </>,
   footerEditLink: true,
   unstable_faviconGlyph: '🌈',
