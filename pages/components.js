@@ -22,7 +22,3 @@ export const ProjTimeline = ({ desc }) => (
     {desc}
   </p>
 );
-
-const Default = () => null;
-
-export default Default;
