@@ -1,8 +1,36 @@
-/* eslint-disable import/no-anonymous-default-export */
+// Anchor Element
+const Linker = ({ title, href }) => {
+  return (
+    <a href={href} target="_blank" rel="noreferrer noopener">
+      {title}
+    </a>
+  )
+}
+
+const links = [
+  {
+    title: "Twitter",
+    href: "https://twitter.com/0xSarthak"
+  },
+  {
+    title: "LinkedIn",
+    href: "https://linkedin.com/in/sarthakv"
+  },
+  {
+    title: "Github",
+    href: "https://github.com/sarthakvdev"
+  },
+  {
+    title: "Blog",
+    href: "https://sarthakv.hashnode.dev"
+  }
+]
+
+// theme config
 export default {
   github: 'https://github.com/sarthakvdev',
   docsRepositoryBase: 'https://github.com/sarthakvdev/internet-garden',
-  titleSuffix: ' – Sarthak Verma',
+  titleSuffix: ' - Sarthak Verma',
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">SARTHAK.</span>
@@ -40,7 +68,7 @@ export default {
         rel="icon"
         type="image/png"
         sizes="512x512"
-        href="/android-chrome-512x512.png" 
+        href="/android-chrome-512x512.png"
       />
       <link
         rel="icon"
@@ -70,39 +98,19 @@ export default {
   footer: true,
   footerText: (
     <>
-      <a
-        href="https://twitter.com/srthkv"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        Twitter
-      </a>{' '}
-      •{' '}
-      <a
-        href="https://linkedin.com/in/sarthakv"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        LinkedIn
-      </a>{' '}
-      •{' '}
-      <a
-        href="https://github.com/sarthakvdev"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        Github
-      </a>{' '}
-      •{' '}
-      <a
-        href="https://sarthakv.hashnode.dev"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        Blog
-      </a>
+      {
+        links.map((link, index) => (
+          <>
+            <Linker 
+              title={link.title}
+              href={link.href}
+            />
+            {(index === links.length - 1) ? null : " • "}
+          </>
+        ))
+      }
     </>
   ),
   footerEditLink: true,
-  // unstable_faviconGlyph: '',
+  unstable_faviconGlyph: ''
 }

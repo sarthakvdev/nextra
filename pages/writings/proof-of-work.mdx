@@ -1,11 +1,10 @@
-import { Para } from "../components.js";
+import { Para } from "../components.js"
+import Callout from "nextra-theme-docs/callout"
 
 # Proof-of-Work (POW): Basics, Working & Features
 <Para desc="Understand the basics of POW and how it works in this beginner friendly blog" />
 
 <img src="/images/BUNoIYLts.jpg" alt="banner" />
-
-
 
 ## Introduction / TL;DR
 Proof-of-work (POW) is a consensus protocol. It allows the nodes of the network to agree on the state of all information recorded on that blockchain. This prevents users from "[double spending](https://www.investopedia.com/terms/d/doublespending.asp#:~:text=Double%2Dspending%20is%20the%20risk,power%20necessary%20to%20manipulate%20it.)" their coins. It also ensures that the Ethereum chain is considerably difficult to attack or manipulate.
@@ -16,7 +15,9 @@ Proof-of-work (POW) is a consensus protocol. It allows the nodes of the network 
 ## History
 The Proof-of-Work concept dates back to 1993. It was later on adapted to securing digital money by Hal Finney in 2004 through the idea of "reusable proof of work". POW uses the SHA-256 hashing algorithm.
 
-> Make sure you have an understanding of  [transactions](https://ethereum.org/en/developers/docs/transactions/),  [consensus mechanisms](https://ethereum.org/en/developers/docs/consensus-mechanisms/) and  [blocks](https://ethereum.org/en/developers/docs/blocks/), before going further.
+<Callout emoji="✅">
+  Make sure you have an understanding of  [transactions](https://ethereum.org/en/developers/docs/transactions/),  [consensus mechanisms](https://ethereum.org/en/developers/docs/consensus-mechanisms/) and  [blocks](https://ethereum.org/en/developers/docs/blocks/), before going further.
+</Callout>
 
 ## Understanding Better
 On Blockchain, unlike a centralized model, if some transaction is done, all the miners check if it is true. If one person says that you owe them $10k, that will be a fraud, coz everyone else will falsify him.
@@ -27,14 +28,18 @@ Proof-of-Work is:
 - fair
 - transparent
 
-> Fact: Bitcoin was the first adaptation of Finney's POW concept. It was used for solving the issue of "[Double Spending](https://www.investopedia.com/terms/d/doublespending.asp#:~:text=Double%2Dspending%20is%20the%20risk,power%20necessary%20to%20manipulate%20it.)". 
+<Callout emoji="💡">
+  Fact: Bitcoin was the first adaptation of Finney's POW concept. It was used for solving the issue of [Double Spending](https://www.investopedia.com/terms/d/doublespending.asp#:~:text=Double%2Dspending%20is%20the%20risk,power%20necessary%20to%20manipulate%20it.). 
+</Callout>
 
 ## How Proof-of-Work works?
 Miners spend a ton of time thinking about the hash code of the block, it's where the POW comes in. You have proof that you spent a long time trying to find the password that works.
 
 In the reward, the miner gets some of that respective blockchain's native cryptocurrency, eg. BTC. The reward received is according to the complexity of the hash they solve. Then all the transactions in that block are validated and the record of everyone in that network are updated to the new blocks.
 
-> Fun Fact: Proof-of-Work was initially created as a proposed solution to the growing problem of spam email.
+<Callout emoji="💡">
+  Proof-of-Work was initially created as a proposed solution to the growing problem of spam email.
+</Callout>
 
 ## Features of Proof-of-Work
 - Secure: Reliable, Safe, Permanent, Fair and transparent
