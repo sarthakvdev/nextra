@@ -36,7 +36,7 @@ const Footer = () => {
 export default {
   github: "https://github.com/sarthakvdev",
   docsRepositoryBase: "https://github.com/sarthakvdev/internet-garden",
-  titleSuffix: " - Sarthak Verma",
+  titleSuffix: " - Sarthak",
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">SARTHAK.</span>
