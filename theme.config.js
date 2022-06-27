@@ -1,36 +1,42 @@
-// Anchor Element
-const Linker = ({ title, href }) => {
-  return (
-    <a href={href} target="_blank" rel="noreferrer noopener">
-      {title}
-    </a>
-  )
-}
+const Footer = () => {
+  const links = [
+    {
+      title: "Twitter",
+      href: "https://twitter.com/0xSarthak",
+    },
+    {
+      title: "LinkedIn",
+      href: "https://linkedin.com/in/sarthakv",
+    },
+    {
+      title: "Github",
+      href: "https://github.com/sarthakvdev",
+    },
+    {
+      title: "Blog",
+      href: "https://sarthakv.hashnode.dev",
+    },
+  ];
 
-const links = [
-  {
-    title: "Twitter",
-    href: "https://twitter.com/0xSarthak"
-  },
-  {
-    title: "LinkedIn",
-    href: "https://linkedin.com/in/sarthakv"
-  },
-  {
-    title: "Github",
-    href: "https://github.com/sarthakvdev"
-  },
-  {
-    title: "Blog",
-    href: "https://sarthakv.hashnode.dev"
-  }
-]
+  return (
+    <div className="flex flex-row">
+      {links.map((link, index) => (
+        <div key={index} className="mr-1">
+          <a href={link.href} target="_blank" rel="noreferrer noopener">
+            {link.title}
+          </a>
+          {index === links.length - 1 ? null : " • "}
+        </div>
+      ))}
+    </div>
+  );
+};
 
 // theme config
 export default {
-  github: 'https://github.com/sarthakvdev',
-  docsRepositoryBase: 'https://github.com/sarthakvdev/internet-garden',
-  titleSuffix: ' - Sarthak Verma',
+  github: "https://github.com/sarthakvdev",
+  docsRepositoryBase: "https://github.com/sarthakvdev/internet-garden",
+  titleSuffix: " - Sarthak Verma",
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">SARTHAK.</span>
@@ -88,7 +94,6 @@ export default {
         sizes="16x16"
         href="/favicon-16x16.png"
       />
-      {/* <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" /> */}
     </>
   ),
   search: true,
@@ -96,21 +101,7 @@ export default {
   nextLinks: true,
   darkMode: true,
   footer: true,
-  footerText: (
-    <>
-      {
-        links.map((link, index) => (
-          <>
-            <Linker 
-              title={link.title}
-              href={link.href}
-            />
-            {(index === links.length - 1) ? null : " • "}
-          </>
-        ))
-      }
-    </>
-  ),
+  footerText: <Footer />,
   footerEditLink: true,
-  unstable_faviconGlyph: ''
-}
+  unstable_faviconGlyph: "",
+};

@@ -9,7 +9,7 @@
     "build": "next build",
     "lint": "next lint"
   },
-  "author": "Shu Ding",
+  "author": "Sarthak Verma",
   "license": "MIT",
   "dependencies": {
     "next": "^11.0.1",
@@ -24,7 +24,7 @@
     "prettier": "^2.0.5"
   },
   "prettier": {
-    "semi": false,
-    "singleQuote": true
+    "semi": true,
+    "singleQuote": false
   }
 }
