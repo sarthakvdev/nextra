@@ -65,6 +65,7 @@ export default {
       <meta name="og:image" content="/banner.png" />
       <meta name="apple-mobile-web-app-title" content="Sarthak." />
       <link rel="manifest" href="/site.webmanifest" />
+      <meta name="theme-color" content="#ffffff" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
