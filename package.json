@@ -1,7 +1,7 @@
 {
-  "name": "nextra",
-  "version": "1.0.0",
-  "description": "chilling",
+  "name": "sarthak-internet-garden",
+  "version": "0.1.0",
+  "description": "Sarthak's little corner where he shares his exploits.",
   "main": "index.js",
   "scripts": {
     "dev": "next",
